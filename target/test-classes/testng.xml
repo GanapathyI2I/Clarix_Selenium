@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllVehicleTests">
+    <test name="VehicleTests">
+        <classes>
+            <class name="tests.VehicleSoldTest"/>
+            <class name="tests.VehicleSalesTest"/>
+            <class name="tests.VehiclesBookedYesterdayTest"/>
+            <class name="tests.VehiclesInvoicedYesterdayTest"/>
+            <class name="tests.VehiclesInvoicedThisMonthTest"/>
+            <class name="tests.VehiclesInvoicedButNotDeliveredTest"/>
+        </classes>
+    </test>
+</suite> 

@@ -1,0 +1,6 @@
+utils\DBUtil.class
+utils\TestResultLogger$TestResult.class
+pages\SalesPage.class
+utils\ConfigUtil.class
+utils\TestResultLogger.class
+pages\HomePage.class

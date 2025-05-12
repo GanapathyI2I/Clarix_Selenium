@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-12T12:06:06 IST" name="AllVehicleTests" finished-at="2025-05-12T12:08:30 IST" duration-ms="144363">
+    <groups>
+    </groups>
+    <test started-at="2025-05-12T12:06:06 IST" name="VehicleTests" finished-at="2025-05-12T12:08:30 IST" duration-ms="144363">
+      <class name="tests.VehicleSoldTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehicleSoldTest@20ce78ec]" started-at="2025-05-12T12:06:06 IST" name="setUp" finished-at="2025-05-12T12:06:26 IST" duration-ms="20075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehicleSold()[pri:0, instance:tests.VehicleSoldTest@20ce78ec]" started-at="2025-05-12T12:06:26 IST" name="testVehicleSold" finished-at="2025-05-12T12:06:30 IST" duration-ms="4386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehicleSold -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehicleSoldTest@20ce78ec]" started-at="2025-05-12T12:06:30 IST" name="tearDown" finished-at="2025-05-12T12:06:31 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehicleSoldTest -->
+      <class name="tests.VehiclesInvoicedButNotDeliveredTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehiclesInvoicedButNotDeliveredTest@479d31f3]" started-at="2025-05-12T12:08:07 IST" name="setUp" finished-at="2025-05-12T12:08:25 IST" duration-ms="17522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehiclesInvoicedButNotDelivered()[pri:0, instance:tests.VehiclesInvoicedButNotDeliveredTest@479d31f3]" started-at="2025-05-12T12:08:25 IST" name="testVehiclesInvoicedButNotDelivered" finished-at="2025-05-12T12:08:30 IST" duration-ms="4599" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[vehiclesInvoicedButNotDelivered expected [2] but found [69]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: vehiclesInvoicedButNotDelivered expected [2] but found [69]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at tests.VehiclesInvoicedButNotDeliveredTest.testVehiclesInvoicedButNotDelivered(VehiclesInvoicedButNotDeliveredTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehiclesInvoicedButNotDelivered -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehiclesInvoicedButNotDeliveredTest@479d31f3]" started-at="2025-05-12T12:08:30 IST" name="tearDown" finished-at="2025-05-12T12:08:30 IST" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehiclesInvoicedButNotDeliveredTest -->
+      <class name="tests.VehiclesInvoicedThisMonthTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehiclesInvoicedThisMonthTest@333291e3]" started-at="2025-05-12T12:07:45 IST" name="setUp" finished-at="2025-05-12T12:08:03 IST" duration-ms="18159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehiclesInvoicedThisMonth()[pri:0, instance:tests.VehiclesInvoicedThisMonthTest@333291e3]" started-at="2025-05-12T12:08:03 IST" name="testVehiclesInvoicedThisMonth" finished-at="2025-05-12T12:08:07 IST" duration-ms="3621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehiclesInvoicedThisMonth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehiclesInvoicedThisMonthTest@333291e3]" started-at="2025-05-12T12:08:07 IST" name="tearDown" finished-at="2025-05-12T12:08:07 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehiclesInvoicedThisMonthTest -->
+      <class name="tests.VehiclesBookedYesterdayTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehiclesBookedYesterdayTest@1ab3a8c8]" started-at="2025-05-12T12:06:56 IST" name="setUp" finished-at="2025-05-12T12:07:16 IST" duration-ms="20748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehiclesBookedYesterday()[pri:0, instance:tests.VehiclesBookedYesterdayTest@1ab3a8c8]" started-at="2025-05-12T12:07:16 IST" name="testVehiclesBookedYesterday" finished-at="2025-05-12T12:07:21 IST" duration-ms="4359" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[vehiclesBookedYesterday expected [2] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: vehiclesBookedYesterday expected [2] but found [0]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at tests.VehiclesBookedYesterdayTest.testVehiclesBookedYesterday(VehiclesBookedYesterdayTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehiclesBookedYesterday -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehiclesBookedYesterdayTest@1ab3a8c8]" started-at="2025-05-12T12:07:21 IST" name="tearDown" finished-at="2025-05-12T12:07:21 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehiclesBookedYesterdayTest -->
+      <class name="tests.VehiclesInvoicedYesterdayTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehiclesInvoicedYesterdayTest@43195e57]" started-at="2025-05-12T12:07:21 IST" name="setUp" finished-at="2025-05-12T12:07:41 IST" duration-ms="20009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehiclesInvoicedYesterday()[pri:0, instance:tests.VehiclesInvoicedYesterdayTest@43195e57]" started-at="2025-05-12T12:07:41 IST" name="testVehiclesInvoicedYesterday" finished-at="2025-05-12T12:07:45 IST" duration-ms="3499" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[vehiclesInvoicedYesterday expected [2] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: vehiclesInvoicedYesterday expected [2] but found [0]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at tests.VehiclesInvoicedYesterdayTest.testVehiclesInvoicedYesterday(VehiclesInvoicedYesterdayTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehiclesInvoicedYesterday -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehiclesInvoicedYesterdayTest@43195e57]" started-at="2025-05-12T12:07:45 IST" name="tearDown" finished-at="2025-05-12T12:07:45 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehiclesInvoicedYesterdayTest -->
+      <class name="tests.VehicleSalesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VehicleSalesTest@6973b51b]" started-at="2025-05-12T12:06:31 IST" name="setUp" finished-at="2025-05-12T12:06:51 IST" duration-ms="20538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVehicleSales()[pri:0, instance:tests.VehicleSalesTest@6973b51b]" started-at="2025-05-12T12:06:51 IST" name="testVehicleSales" finished-at="2025-05-12T12:06:55 IST" duration-ms="4008" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[vehicleSales expected [2] but found [₹ 20.34 L]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: vehicleSales expected [2] but found [₹ 20.34 L]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at tests.VehicleSalesTest.testVehicleSales(VehicleSalesTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVehicleSales -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VehicleSalesTest@6973b51b]" started-at="2025-05-12T12:06:55 IST" name="tearDown" finished-at="2025-05-12T12:06:56 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VehicleSalesTest -->
+    </test> <!-- VehicleTests -->
+  </suite> <!-- AllVehicleTests -->
+</testng-results>

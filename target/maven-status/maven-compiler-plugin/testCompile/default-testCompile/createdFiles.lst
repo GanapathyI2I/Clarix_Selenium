@@ -1,0 +1,6 @@
+tests\VehicleSoldTest.class
+tests\VehiclesInvoicedThisMonthTest.class
+tests\VehicleSalesTest.class
+tests\VehiclesInvoicedYesterdayTest.class
+tests\VehiclesBookedYesterdayTest.class
+tests\VehiclesInvoicedButNotDeliveredTest.class
