@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AllVehicleTests]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="${test.url}"/>
   <test thread-count="5" name="VehicleTests(failed)" verbose="0">
     <classes>
-      <class name="tests.VehiclesBookedYesterdayTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testVehiclesBookedYesterday"/>
-        </methods>
-      </class> <!-- tests.VehiclesBookedYesterdayTest -->
-      <class name="tests.VehiclesInvoicedButNotDeliveredTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testVehiclesInvoicedButNotDelivered"/>
-        </methods>
-      </class> <!-- tests.VehiclesInvoicedButNotDeliveredTest -->
-      <class name="tests.VehicleSalesTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testVehicleSales"/>
-        </methods>
-      </class> <!-- tests.VehicleSalesTest -->
       <class name="tests.VehiclesInvoicedYesterdayTest">
         <methods>
           <include name="setUp"/>
@@ -31,6 +12,20 @@
           <include name="testVehiclesInvoicedYesterday"/>
         </methods>
       </class> <!-- tests.VehiclesInvoicedYesterdayTest -->
+      <class name="tests.VehiclesInvoicedButNotDeliveredTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testVehiclesInvoicedButNotDelivered"/>
+        </methods>
+      </class> <!-- tests.VehiclesInvoicedButNotDeliveredTest -->
+      <class name="tests.VehiclesBookedYesterdayTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testVehiclesBookedYesterday"/>
+        </methods>
+      </class> <!-- tests.VehiclesBookedYesterdayTest -->
     </classes>
   </test> <!-- VehicleTests(failed) -->
 </suite> <!-- Failed suite [AllVehicleTests] -->

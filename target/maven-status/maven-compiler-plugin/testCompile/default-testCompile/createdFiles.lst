@@ -1,4 +1,7 @@
+base\BaseTest.class
+tests\CurrentMonth.class
 tests\VehicleSoldTest.class
+tests\LastMonth.class
 tests\VehiclesInvoicedThisMonthTest.class
 tests\VehicleSalesTest.class
 tests\VehiclesInvoicedYesterdayTest.class

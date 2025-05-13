@@ -1,13 +1,8 @@
 [ {
-  "Scenario" : "vehicleSold",
-  "DB" : "2",
-  "APP" : "2",
-  "Status" : "pass"
-}, {
   "Scenario" : "Vehicle Sales",
-  "DB" : "2",
+  "DB" : "2033825.94",
   "APP" : "₹ 20.34 L",
-  "Status" : "fail"
+  "Status" : "pass"
 }, {
   "Scenario" : "vehiclesBookedYesterday",
   "DB" : "2",
@@ -28,4 +23,19 @@
   "DB" : "2",
   "APP" : "69",
   "Status" : "fail"
+}, {
+  "Scenario" : "vehicleSold",
+  "DB" : "2",
+  "APP" : "2",
+  "Status" : "pass"
+}, {
+  "Scenario" : "Current Month",
+  "DB" : "2",
+  "APP" : "2",
+  "Status" : "pass"
+}, {
+  "Scenario" : "Last Month",
+  "DB" : "164",
+  "APP" : "164",
+  "Status" : "pass"
 } ]

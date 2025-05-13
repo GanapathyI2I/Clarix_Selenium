@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-AllVehicleTests" class="show-methods failed suite-AllVehicleTests"> (show)</a> <!-- show-methods failed suite-AllVehicleTests -->
                     </span>
                     <div class="method-list-content failed suite-AllVehicleTests">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllVehicleTests" title="tests.VehicleSalesTest" class="method navigator-link" hash-for-method="testVehicleSales">testVehicleSales</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllVehicleTests" title="tests.VehiclesBookedYesterdayTest" class="method navigator-link" hash-for-method="testVehiclesBookedYesterday">testVehiclesBookedYesterday</a> <!-- method navigator-link -->
@@ -132,6 +127,21 @@
                     <div class="method-list-content passed suite-AllVehicleTests">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllVehicleTests" title="tests.CurrentMonth" class="method navigator-link" hash-for-method="testCurrentMonth">testCurrentMonth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllVehicleTests" title="tests.LastMonth" class="method navigator-link" hash-for-method="testLastMonth">testLastMonth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllVehicleTests" title="tests.VehicleSalesTest" class="method navigator-link" hash-for-method="testVehicleSales">testVehicleSales</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllVehicleTests" title="tests.VehicleSoldTest" class="method navigator-link" hash-for-method="testVehicleSold">testVehicleSold</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -155,16 +165,16 @@
           <div class="suite-AllVehicleTests-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.VehiclesBookedYesterdayTest</span>
+              <span class="class-name">tests.VehiclesInvoicedYesterdayTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVehiclesBookedYesterday">
-                  </a> <!-- testVehiclesBookedYesterday -->
-                  <span class="method-name">testVehiclesBookedYesterday</span>
-                  <div class="stack-trace">java.lang.AssertionError: vehiclesBookedYesterday expected [2] but found [0]
-	at tests.VehiclesBookedYesterdayTest.testVehiclesBookedYesterday(VehiclesBookedYesterdayTest.java:43)
+                  <a name="testVehiclesInvoicedYesterday">
+                  </a> <!-- testVehiclesInvoicedYesterday -->
+                  <span class="method-name">testVehiclesInvoicedYesterday</span>
+                  <div class="stack-trace">java.lang.AssertionError: vehiclesInvoicedYesterday expected [2] but found [0]
+	at tests.VehiclesInvoicedYesterdayTest.testVehiclesInvoicedYesterday(VehiclesInvoicedYesterdayTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -184,7 +194,7 @@
                   </a> <!-- testVehiclesInvoicedButNotDelivered -->
                   <span class="method-name">testVehiclesInvoicedButNotDelivered</span>
                   <div class="stack-trace">java.lang.AssertionError: vehiclesInvoicedButNotDelivered expected [2] but found [69]
-	at tests.VehiclesInvoicedButNotDeliveredTest.testVehiclesInvoicedButNotDelivered(VehiclesInvoicedButNotDeliveredTest.java:43)
+	at tests.VehiclesInvoicedButNotDeliveredTest.testVehiclesInvoicedButNotDelivered(VehiclesInvoicedButNotDeliveredTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -195,36 +205,16 @@
           <div class="suite-AllVehicleTests-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.VehicleSalesTest</span>
+              <span class="class-name">tests.VehiclesBookedYesterdayTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVehicleSales">
-                  </a> <!-- testVehicleSales -->
-                  <span class="method-name">testVehicleSales</span>
-                  <div class="stack-trace">java.lang.AssertionError: vehicleSales expected [2] but found [₹ 20.34 L]
-	at tests.VehicleSalesTest.testVehicleSales(VehicleSalesTest.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AllVehicleTests-class-failed -->
-          <div class="suite-AllVehicleTests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.VehiclesInvoicedYesterdayTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testVehiclesInvoicedYesterday">
-                  </a> <!-- testVehiclesInvoicedYesterday -->
-                  <span class="method-name">testVehiclesInvoicedYesterday</span>
-                  <div class="stack-trace">java.lang.AssertionError: vehiclesInvoicedYesterday expected [2] but found [0]
-	at tests.VehiclesInvoicedYesterdayTest.testVehiclesInvoicedYesterday(VehiclesInvoicedYesterdayTest.java:43)
+                  <a name="testVehiclesBookedYesterday">
+                  </a> <!-- testVehiclesBookedYesterday -->
+                  <span class="method-name">testVehiclesBookedYesterday</span>
+                  <div class="stack-trace">java.lang.AssertionError: vehiclesBookedYesterday expected [2] but found [0]
+	at tests.VehiclesBookedYesterdayTest.testVehiclesBookedYesterday(VehiclesBookedYesterdayTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -235,14 +225,29 @@
           <div class="suite-AllVehicleTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.VehiclesInvoicedThisMonthTest</span>
+              <span class="class-name">tests.LastMonth</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVehiclesInvoicedThisMonth">
-                  </a> <!-- testVehiclesInvoicedThisMonth -->
-                  <span class="method-name">testVehiclesInvoicedThisMonth</span>
+                  <a name="testLastMonth">
+                  </a> <!-- testLastMonth -->
+                  <span class="method-name">testLastMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllVehicleTests-class-passed -->
+          <div class="suite-AllVehicleTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.VehicleSalesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVehicleSales">
+                  </a> <!-- testVehicleSales -->
+                  <span class="method-name">testVehicleSales</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -262,6 +267,36 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AllVehicleTests-class-passed -->
+          <div class="suite-AllVehicleTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.VehiclesInvoicedThisMonthTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVehiclesInvoicedThisMonth">
+                  </a> <!-- testVehiclesInvoicedThisMonth -->
+                  <span class="method-name">testVehiclesInvoicedThisMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllVehicleTests-class-passed -->
+          <div class="suite-AllVehicleTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CurrentMonth</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCurrentMonth">
+                  </a> <!-- testCurrentMonth -->
+                  <span class="method-name">testCurrentMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllVehicleTests-class-passed -->
         </div> <!-- panel AllVehicleTests -->
         <div panel-name="test-xml-AllVehicleTests" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -272,14 +307,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;AllVehicleTests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;${test.url}&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;VehicleTests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.VehicleSoldTest&quot;/&gt;
       &lt;class name=&quot;tests.VehicleSalesTest&quot;/&gt;
       &lt;class name=&quot;tests.VehiclesBookedYesterdayTest&quot;/&gt;
       &lt;class name=&quot;tests.VehiclesInvoicedYesterdayTest&quot;/&gt;
       &lt;class name=&quot;tests.VehiclesInvoicedThisMonthTest&quot;/&gt;
       &lt;class name=&quot;tests.VehiclesInvoicedButNotDeliveredTest&quot;/&gt;
+      &lt;class name=&quot;tests.VehicleSoldTest&quot;/&gt;
+      &lt;class name=&quot;tests.CurrentMonth&quot;/&gt;
+      &lt;class name=&quot;tests.LastMonth&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- VehicleTests --&gt;
 &lt;/suite&gt; &lt;!-- AllVehicleTests --&gt;
@@ -293,7 +332,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">VehicleTests (6 classes)</span>
+                <span class="test-name">VehicleTests (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -319,36 +358,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testVehiclesInvoicedButNotDelivered')
-data.setCell(0, 2, 'tests.VehiclesInvoicedButNotDeliveredTest')
-data.setCell(0, 3, 4599);
+data.setCell(0, 1, 'testVehicleSales')
+data.setCell(0, 2, 'tests.VehicleSalesTest')
+data.setCell(0, 3, 4713);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testVehicleSold')
-data.setCell(1, 2, 'tests.VehicleSoldTest')
-data.setCell(1, 3, 4386);
+data.setCell(1, 1, 'testLastMonth')
+data.setCell(1, 2, 'tests.LastMonth')
+data.setCell(1, 3, 383);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testVehiclesBookedYesterday')
-data.setCell(2, 2, 'tests.VehiclesBookedYesterdayTest')
-data.setCell(2, 3, 4359);
+data.setCell(2, 1, 'testCurrentMonth')
+data.setCell(2, 2, 'tests.CurrentMonth')
+data.setCell(2, 3, 335);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testVehicleSales')
-data.setCell(3, 2, 'tests.VehicleSalesTest')
-data.setCell(3, 3, 4008);
+data.setCell(3, 1, 'testVehiclesInvoicedButNotDelivered')
+data.setCell(3, 2, 'tests.VehiclesInvoicedButNotDeliveredTest')
+data.setCell(3, 3, 326);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testVehiclesInvoicedThisMonth')
-data.setCell(4, 2, 'tests.VehiclesInvoicedThisMonthTest')
-data.setCell(4, 3, 3621);
+data.setCell(4, 1, 'testVehiclesInvoicedYesterday')
+data.setCell(4, 2, 'tests.VehiclesInvoicedYesterdayTest')
+data.setCell(4, 3, 315);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testVehiclesInvoicedYesterday')
-data.setCell(5, 2, 'tests.VehiclesInvoicedYesterdayTest')
-data.setCell(5, 3, 3499);
+data.setCell(5, 1, 'testVehicleSold')
+data.setCell(5, 2, 'tests.VehicleSoldTest')
+data.setCell(5, 3, 303);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testVehiclesBookedYesterday')
+data.setCell(6, 2, 'tests.VehiclesBookedYesterdayTest')
+data.setCell(6, 3, 300);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testVehiclesInvoicedThisMonth')
+data.setCell(7, 2, 'tests.VehiclesInvoicedThisMonthTest')
+data.setCell(7, 3, 262);
 window.suiteTableData['AllVehicleTests']= { tableData: data, tableDiv: 'times-div-AllVehicleTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-AllVehicleTests">
               </div> <!-- times-div-AllVehicleTests -->
             </div> <!-- times-div -->
@@ -363,9 +410,72 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-AllVehicleTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">14 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LastMonth</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VehiclesInvoicedYesterdayTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VehicleSoldTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VehiclesBookedYesterdayTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VehiclesInvoicedButNotDeliveredTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CurrentMonth</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VehiclesInvoicedThisMonthTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-AllVehicleTests" class="panel">
@@ -374,102 +484,77 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.VehicleSoldTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">tests.VehicleSalesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">testVehicleSold</span>
-                <span class="method-start">20086 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24476 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VehicleSalesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">24904 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testVehicleSales</span>
-                <span class="method-start">45442 ms</span>
+                <span class="method-start">22046 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">49458 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VehiclesBookedYesterdayTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">49907 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testVehiclesBookedYesterday</span>
-                <span class="method-start">70655 ms</span>
+                <span class="method-start">26766 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">75014 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VehiclesInvoicedYesterdayTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">75469 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testVehiclesInvoicedYesterday</span>
-                <span class="method-start">95478 ms</span>
+                <span class="method-start">27076 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">98979 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VehiclesInvoicedThisMonthTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">99469 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testVehiclesInvoicedThisMonth</span>
-                <span class="method-start">117628 ms</span>
+                <span class="method-start">27395 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">121252 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VehiclesInvoicedButNotDeliveredTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">121699 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testVehiclesInvoicedButNotDelivered</span>
-                <span class="method-start">139223 ms</span>
+                <span class="method-start">27657 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VehicleSoldTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testVehicleSold</span>
+                <span class="method-start">27983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CurrentMonth</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCurrentMonth</span>
+                <span class="method-start">28286 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LastMonth</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLastMonth</span>
+                <span class="method-start">28625 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VehicleSalesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">143822 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">29114 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

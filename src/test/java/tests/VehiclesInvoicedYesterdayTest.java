@@ -1,37 +1,13 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import pages.HomePage;
-import pages.SalesPage;
-import utils.ConfigUtil;
+import base.BaseTest;
 import utils.DBUtil;
 import utils.TestResultLogger;
 
-public class VehiclesInvoicedYesterdayTest {
-    private WebDriver driver;
-    private HomePage homePage;
-    private SalesPage salesPage;
-
-    @BeforeClass
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", ConfigUtil.get("chrome.driver.path"));
-        driver = new ChromeDriver();
-        homePage = new HomePage(driver);
-        salesPage = new SalesPage(driver);
-
-        homePage.login(ConfigUtil.get("url"), ConfigUtil.get("username"), ConfigUtil.get("password"));
-        homePage.switchToPowerBIFrame();
-        homePage.clickTile(6); // Adjust index as needed
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) driver.quit();
-    }
-
+public class VehiclesInvoicedYesterdayTest extends BaseTest {
+  
     @Test
     public void testVehiclesInvoicedYesterday() throws Exception {
         String actual = salesPage.getValueByIndex(7); // Adjust index as needed
